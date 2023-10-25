@@ -6,7 +6,7 @@ import javax.swing.JTextField;
 public class teste2 {
     public static void main(String[] args) {
         JFrame janela = new JFrame("Exemplo com Campos de Texto");
-        janela.setSize(600, 400);
+        janela.setSize(700, 500);
         janela.setLayout(null);
 
         JLabel nome = new JLabel("Nome:");
@@ -47,18 +47,27 @@ public class teste2 {
         
         botao1.setBounds(450, 250, 100, 40);
 
+        JLabel telefone2 = new JLabel("telefone:");
+        telefone2.setBounds(326, 90, 60, 30);
+
+        JTextField escrevetelefone2 = new JTextField();
+        escrevetelefone2.setBounds(380, 90, 200, 30);
+
         janela.add(botao);
         janela.add(botao1);
         janela.add(nome);
         janela.add(cpf);
         janela.add(telefone);
+        janela.add(telefone2);
         janela.add(email);
         janela.add(endereco);        
         janela.add(escrevenome);
         janela.add(escrevecpf);
         janela.add(escrevetelefone);
+        janela.add(escrevetelefone2);
         janela.add(escreveemail);
         janela.add(escreveendereco);
+
        
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janela.setVisible(true);
